@@ -371,43 +371,6 @@
     padding-top: 12px;
   }
 
-  /* ---------- Blog ---------- */
-  .log {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .log-entry {
-    display: grid;
-    grid-template-columns: 110px 1fr;
-    gap: 20px;
-    padding: 18px 0;
-    border-bottom: 1px solid var(--line);
-    text-decoration: none;
-    color: var(--ink);
-  }
-  .log-entry:first-child { padding-top: 0; }
-
-  .log-date {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    color: var(--ink-soft);
-    padding-top: 3px;
-  }
-
-  .log-title {
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 1.02rem;
-    margin: 0 0 4px;
-  }
-
-  .log-excerpt {
-    font-size: 0.92rem;
-    color: var(--ink-soft);
-    margin: 0;
-  }
-
   /* ---------- Contact ---------- */
   .contact-panel {
     background: var(--ink);
@@ -472,7 +435,7 @@
 <!-- ============ Top tab navigation ============ -->
 <div class="tabbar">
   <div class="tabbar-inner">
-    <span class="brand">~/[your-name]</span>
+    <span class="brand">~/katdelaney</span>
     <a href="#about" class="tab active"><span class="dot"></span>About.tsx</a>
     <a href="#projects" class="tab"><span class="dot"></span>Projects/</a>
     <a href="#contact" class="tab"><span class="dot"></span>Contact.sh</a>
@@ -486,7 +449,7 @@
   <!-- ============ Hero ============ -->
   <header class="hero" id="top">
     <p class="hero-eyebrow">Available for opportunities</p>
-    <h1>Kat Delaney builds <span>things that work.</span></h1>
+    <h1>Kat Delaney is a software developer who builds <span>things that work.</span></h1>
 
     <div class="code-intro">
       <span class="code-line-num">01</span>
@@ -512,14 +475,27 @@
       </div>
     </div>
     <div class="about-body">
-      <p>[Two or three sentences on your background — what you studied, what you do now, and what drew you to it. Keep it conversational, not a résumé bullet list.]</p>
-      <p>[Optional second paragraph — what you're focused on right now, or what kind of problems you like solving.]</p>
+      <p>I am a Computer Science graduate from Rochester Institute of Technology with a strong foundation in data science, computer vision, and machine learning.</p>
+      <p>I am passionate about using technology to solve real-world problems, particularly where it intersects with human well-being, medicine, and the outdoors.</p>
+      <p>Currently, I am volunteering at Sante Imanitè, a non-profit, as their full stack developer. I designed their website, have been maintaining it, and I deal with any other technical problems the non-proift has. </p>
       <div class="about-tags">
-        <span class="tag">[Skill / Language]</span>
-        <span class="tag">[Skill / Language]</span>
-        <span class="tag">[Skill / Language]</span>
-        <span class="tag">[Tool]</span>
-        <span class="tag">[Tool]</span>
+        <span class="tag">Java</span>
+        <span class="tag">Python</span>
+        <span class="tag">C</span>
+        <span class="tag">C#</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">SQL</span>
+        <span class="tag">React</span>
+        <span class="tag">Angular</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Git</span>
+        <span class="tag">Prompt Engineering</span>
+        <span class="tag">MATLAB</span>
+        <span class="tag">Bash</span>
+
       </div>
     </div>
   </section>
@@ -535,39 +511,39 @@
     </div>
 
     <div class="project-grid">
-      <a href="#" class="project-card">
+      <a href="https://www.santeimanite.org/" class="project-card">
         <div class="project-card-top">
-          <h3>[Project One]</h3>
+          <h3>Sante Imanitè's Website</h3>
           <span class="project-status">active</span>
         </div>
-        <p>[One or two sentences describing what it does and why you built it.]</p>
+        <p>The website for the Sante Imanitè non-profit, a better website allows for more grants and outreach.</p>
         <div class="project-meta">
-          <span>lang: [React]</span>
-          <span>type: [Web app]</span>
+          <span>lang: HTML and CSS</span>
+          <span>type: Web App - hosted on Squarespace</span>
         </div>
       </a>
 
-      <a href="#" class="project-card">
+      <a href="https://colab.research.google.com/drive/1pRhVBEP-5ifMi8xAZIc6Vqzm5aCQ6FBp?usp=sharing" class="project-card">
         <div class="project-card-top">
-          <h3>[Project Two]</h3>
-          <span class="project-status">shipped</span>
+          <h3>Clinical Decision Support LLM</h3>
+          <span class="project-status">complete</span>
         </div>
-        <p>[One or two sentences describing what it does and why you built it.]</p>
+        <p>Oncology research is ever expanding. Oncologists need a way to keep their information up to date and ensure that the information is reliable. My research was focused on creating an LLM to do just that. Presented findings at the 2025 RIT Undergraduate Research Symposium.</p>
         <div class="project-meta">
-          <span>lang: [Python]</span>
-          <span>type: [CLI tool]</span>
+          <span>lang: Python (Mistral)</span>
+          <span>type: LLM</span>
         </div>
       </a>
 
-      <a href="#" class="project-card">
+      <a href="https://github.com/asm1075/p320_11" class="project-card">
         <div class="project-card-top">
-          <h3>[Project Three]</h3>
-          <span class="project-status">archived</span>
+          <h3>Game Discovery & Recommendation Platform</h3>
+          <span class="project-status">complete</span>
         </div>
-        <p>[One or two sentences describing what it does and why you built it.]</p>
+        <p>A full-stack application to manage and query a large video game dataset. Develops a recommendation engine based on your recent activity and patterns.</p>
         <div class="project-meta">
-          <span>lang: [JavaScript]</span>
-          <span>type: [Browser extension]</span>
+          <span>lang: Java and PostgreSQL</span>
+          <span>type: Dataset and Recommendation Platform</span>
         </div>
       </a>
     </div>
@@ -589,6 +565,7 @@
       <div class="contact-links">
         <a href="mailto:ksd8518@g.rit.edu">Email</a>
         <a href="https://www.linkedin.com/in/kat-delaney/">LinkedIn</a>
+        <a href="https://devpost.com/ksd8518?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">Devpost</a>
       </div>
     </div>
   </section>
